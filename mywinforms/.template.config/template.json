@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Me",
+  "classifications": ["Common", "WinForms"],
+  "identity": "My Winforms Project",
+  "name": "My Windows フォーム アプリ",
+  "shortName": "mywinforms",
+  "tags": {
+    "language": "C#",
+    "type": "project",
+    "$types": ["project", "item", "solution"]
+  },
+  "sourceName": "MyProject",
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": ["**/*.template.bat", "**/_*/**", "**/_*"]
+        }
+      ]
+    }
+  ],
+  "guids": [
+    "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC",
+    "39A99758-6AD4-271D-8F43-D33A1DDE82B2",
+    "846AFD25-4870-4E64-8132-547C4425869B"
+  ],
+  "symbols": {
+    "ProjectGuid": {
+      "type": "generated",
+      "generator": "guid",
+      "replaces": "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC",
+      "parameters": { "format": "B" }
+    },
+    "ConfigurationGuid": {
+      "type": "generated",
+      "generator": "guid",
+      "replaces": "39A99758-6AD4-271D-8F43-D33A1DDE82B2",
+      "parameters": { "format": "B" }
+    },
+    "SolutionGuid": {
+      "type": "generated",
+      "generator": "guid",
+      "replaces": "846AFD25-4870-4E64-8132-547C4425869B",
+      "parameters": { "format": "B" }
+    },
+    "CreateDate": {
+      "type": "generated",
+      "generator": "now",
+      "parameters": { "format": "MM/dd/yyyy" },
+      "replaces": "01/01/1900"
+    },
+    "CreateYear": {
+      "type": "generated",
+      "generator": "now",
+      "parameters": { "format": " yyyy " },
+      "replaces": " 1900 "
+    },
+    "UserName": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "UserName",
+      "defaultValue": ""
+    },
+    "ProductName": {
+      "type": "parameter",
+      "description": "The name of the code namesapce.",
+      "datatype": "text",
+      "replaces": "MyProduct",
+      "defaultValue": "MyProduct"
+    }
+  }
+}
