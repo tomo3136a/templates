@@ -60,6 +60,7 @@ Debug/
 *.bak
 *.vdproj
 obj/
+bin/
 
 # ignore
 _*/
