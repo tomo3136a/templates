@@ -24,7 +24,7 @@ namespace MyProduct
         }
 
         //IDataErrorInfo
-        public string Error { get { return "frame error"; } }
+        public string Error { get { return string.Empty; } }
 
         public virtual string this[string columnName] { get { return string.Empty; } }
 
