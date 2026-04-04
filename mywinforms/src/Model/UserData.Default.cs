@@ -23,7 +23,7 @@ namespace MyProduct
                 return data;
             }
 
-            var ts = new Type[] { typeof(UserData), typeof(ViewModel) };
+            var ts = new Type[] { typeof(UserData) };
             DataContractSerializer ser =
                 new DataContractSerializer(typeof(UserData), ts);
             var bom = new System.Text.UTF8Encoding(false);
@@ -41,7 +41,7 @@ namespace MyProduct
             {
                 if (path == "") path = UserData.DafaultFileName;
 
-                var ts = new Type[] { typeof(UserData), typeof(ViewModel) };
+                var ts = new Type[] { typeof(UserData) };
                 DataContractSerializer ser =
                     new DataContractSerializer(typeof(UserData), ts);
                 var xws = new XmlWriterSettings();

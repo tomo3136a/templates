@@ -11,6 +11,7 @@
     "$types": ["project", "item", "solution"]
   },
   "sourceName": "MyProject",
+  "preferNameDirectory": true,
   "sources": [
     {
       "modifiers": [

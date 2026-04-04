@@ -5,10 +5,14 @@ param($OutputPath = "./bin", [switch]$Pass)
 
 Write-Host "build start." -ForegroundColor Yellow
 
-$Path = "src/*.cs", "src/**/*.cs"
-$ReferencedAssemblies = "System.Configuration", "System.Windows.Forms", `
-    "System.Drawing", "System.Xml", "System.Runtime.Serialization", `
-    "System.ComponentModel.Annotations", "System.ComponentModel.DataAnnotations"
+$Path = @()
+foreach ($Src in "","src","src/*") {
+  $Src = $Src,"*.cs" -join "/"
+  if ((Get-Item $Src).count -gt 0) { $Path += $Src }
+}
+$ReferencedAssemblies = "System.Configuration", `
+    "System.Windows.Forms", "System.Drawing", `
+    "System.Xml", "System.Runtime.Serialization"
 
 $EType=[Microsoft.PowerShell.Commands.OutputAssemblyType]
 #$Type=$EType::ConsoleApplication
